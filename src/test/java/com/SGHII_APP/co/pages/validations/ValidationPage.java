@@ -21,6 +21,16 @@ public class ValidationPage extends PageObject {
     @FindBy(xpath = "//p[@class='titlepanel text-wrap badge bg-secondary' and text()='Información Item']")
     protected WebElementFacade tag_Info_ItemTool_Page;
 
+    @FindBy(xpath = "//p[@class='titlepanel text-wrap badge bg-secondary' and text()='Información Operario']")
+    protected WebElementFacade tag_Info_Worker_Page;
 
+    @FindBy(xpath = "//p[@class='titlepanel text-wrap badge bg-secondary' and text()='Información Kits']")
+    protected WebElementFacade tag_Info_Kits_Page;
+
+    @FindBy(xpath = "//p[@class='titlepanel text-wrap badge bg-secondary' and text()='Herramientas']")
+    protected WebElementFacade tag_List_Tools_Page;
+
+    @FindBy(xpath = "//p[@class='titlepanelL text-wrap badge bg-light text-info' and text()='Cantidades bajas en inventario']")
+    protected WebElementFacade tag_List_Tools_Low_Dashboard;
 
 }

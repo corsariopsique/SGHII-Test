@@ -22,4 +22,16 @@ public class ValidationsStep extends ValidationPage {
     @Step("Valida ingreso informacion item")
     public Boolean tagInfoItemVisible() {return tag_Info_ItemTool_Page.isDisplayed();}
 
+    @Step("Validar ingreso informacion operario")
+    public Boolean tagInfoWorkerVisible() {return tag_Info_Worker_Page.isDisplayed();}
+
+    @Step("Validar ingreso informacion kit")
+    public Boolean tagInfoKitVisible() {return tag_Info_Kits_Page.isDisplayed();}
+
+    @Step("Validar eliminar herramienta")
+    public Boolean tagListToolVisible() {return tag_List_Tools_Page.isDisplayed();}
+
+    @Step("Validar acceso panel principal")
+    public Boolean tagListToolLowVisible() {return tag_List_Tools_Low_Dashboard.isDisplayed();}
+
 }

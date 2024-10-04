@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="CP04 - Agregar herramienta a inventario y consultar su estado" skipped="0" tests="2" time="17.95" timestamp="2024-10-03 10:43:44"><testcase name="1 - Agregar herramienta a inventario"/><testcase name="2 - Revisar estado de un item de una herramienta registrada"/></testsuite>

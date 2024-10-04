@@ -43,6 +43,9 @@ public class OperationsDefinicion {
 
     @When("Selecciona operario y herramienta a devolver")
     public void userRealizaDevolucion() {
+        login.tipeaNombreUsuario("usuario");
+        login.tipeaPassword("password");
+        login.clickIngresar();
         operations.clicOperaciones();
         operations.clicAgregarOperacion();
         operations.clicTipoDevolucion();

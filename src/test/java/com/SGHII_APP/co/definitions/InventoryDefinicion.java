@@ -45,6 +45,9 @@ public class InventoryDefinicion {
     @When("Ingresa a inventario y selecciona una herramienta para ver su estado")
     public void userReviewItemTool(){
 
+        login.tipeaNombreUsuario("usuario");
+        login.tipeaPassword("password");
+        login.clickIngresar();
         inventories.clicInventario();
         inventories.clicToolListed();
         inventories.clicBotonItemsTool();
