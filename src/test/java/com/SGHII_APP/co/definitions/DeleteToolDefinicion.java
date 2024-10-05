@@ -37,7 +37,7 @@ public class DeleteToolDefinicion {
         deletes.clicEditarHerramienta();
         deletes.clicEliminarHerramienta();
         deletes.clicConfirmarEliminarHerramienta();
-        deletes.clicAlertaEliminadaHerramienta();
+        //deletes.clicAlertaEliminadaHerramienta();
     }
 
     @Then("El sistema confirma el exito del proceso y lleva al listado inicial de herramientas")

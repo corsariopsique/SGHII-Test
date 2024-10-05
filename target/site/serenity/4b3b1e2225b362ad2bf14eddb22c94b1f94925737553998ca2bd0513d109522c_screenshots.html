@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">SGHII-Test</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="10d0f27790140cd97e8ee1c5f71c927eeee93012de851bf79c205b8e3cb4ffba.html">CP01 - CP02 - Realizar Operaciones De Herramienta A Operario</a></span>
+                > <span class="truncate-60"><a
+                    href="4b3b1e2225b362ad2bf14eddb22c94b1f94925737553998ca2bd0513d109522c.html">1 - Validar operacion de prestamo </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 03-10-2024 22:43</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">CP01 - CP02 - Realizar Operaciones De Herramienta A Operario</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                            <div class="requirementNarrative">Background: Validar la operaciones (prestamos-devoluciones) de herramienta
+                                    <p></p>
+                            </div>
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="c4d977dc165286505e7f3a5a6413dee4616f0c46206437693a59adc3cfb9ece6.html">Suite
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="478dede7257abe7991ff96e77edb3e3b45a1faf9c45fb039f3b47a9c2390c012.html">Firefox
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="c2d22bfaf3d60e2021650877c21a8ca013bd63176706942fbf73d3776c255ee7.html">Operaciones
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="3c07bffd5fe06edf199a85fa4da751b03f09f74a3629088ac0a48e3a84906a52.html">Firefox, Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="af1344d62d8f4e0c54af80fedc4200c18ac592874f701499962202359c5b3d27.html">Validation Operations
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">1 - Validar operacion de prestamo
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="56e269b1c4e39bba394f3a390c7c1cf874ae5e5a24e910ccf266d399b7535277.png" title=" Given El usuario ingresa a la panel principal del sistema" width="0"/>
+                <img src="594cd34135ac64837c617b492576d36969da811755c391c31098b8f164fbc7d1.png" title=" When Selecciona operario y herramienta a prestar" width="0"/>
+                <img src="594cd34135ac64837c617b492576d36969da811755c391c31098b8f164fbc7d1.png" title=" Ingresar usuario" width="0"/>
+                <img src="594cd34135ac64837c617b492576d36969da811755c391c31098b8f164fbc7d1.png" title=" Ingresar password" width="0"/>
+                <img src="1d60321afbbbf339313455bbb3e088514a30878ce3fd7c0bf0c0ce7a00d1c2a8.png" title=" Ingresar password (completed)" width="0"/>
+                <img src="1d60321afbbbf339313455bbb3e088514a30878ce3fd7c0bf0c0ce7a00d1c2a8.png" title=" Hacer clic en el boton" width="0"/>
+                <img src="4846257463f2e952658e4d76238240e05dcafb701e1e26ef6536e8b7b56f0228.png" title=" Hacer clic en el boton (completed)" width="0"/>
+                <img src="4846257463f2e952658e4d76238240e05dcafb701e1e26ef6536e8b7b56f0228.png" title=" Clic boton operaciones" width="0"/>
+                <img src="49940619a96229b46c8faa541d43460a87f442b8d09a1997092ee7f7cd4b42f3.png" title=" Clic boton operaciones (completed)" width="0"/>
+                <img src="49940619a96229b46c8faa541d43460a87f442b8d09a1997092ee7f7cd4b42f3.png" title=" Clic agregar operacion" width="0"/>
+                <img src="b2a3bf889e5544c88c5e04107914b6c60cb35a626cadcb0e0b9ab022d8a00525.png" title=" Clic agregar operacion (completed)" width="0"/>
+                <img src="b2a3bf889e5544c88c5e04107914b6c60cb35a626cadcb0e0b9ab022d8a00525.png" title=" Clic tipo prestamo" width="0"/>
+                <img src="aa80f208f23ff50b7607b36451b32b30e76733aa0f0f7b50aa6df4f7befc75f1.png" title=" Clic tipo prestamo (completed)" width="0"/>
+                <img src="aa80f208f23ff50b7607b36451b32b30e76733aa0f0f7b50aa6df4f7befc75f1.png" title=" Clic tipo herramienta" width="0"/>
+                <img src="c13f0e023260686298123f27f9049df34a4665b71d11aea7a91c376fd5660514.png" title=" Clic tipo herramienta (completed)" width="0"/>
+                <img src="c13f0e023260686298123f27f9049df34a4665b71d11aea7a91c376fd5660514.png" title=" Clic operario lista" width="0"/>
+                <img src="e1f19e7385803cf6cd27092a53f36e54ece82e9a59aca9893769a44f7534176c.png" title=" Clic operario lista (completed)" width="0"/>
+                <img src="e1f19e7385803cf6cd27092a53f36e54ece82e9a59aca9893769a44f7534176c.png" title=" Clic herramienta lista" width="0"/>
+                <img src="15c0e9a41df9b4fe62fe6418820ab36cf2edaa4f6da7e8a2aac76214ada3ec4a.png" title=" Clic herramienta lista (completed)" width="0"/>
+                <img src="15c0e9a41df9b4fe62fe6418820ab36cf2edaa4f6da7e8a2aac76214ada3ec4a.png" title=" Clic registrar operacion" width="0"/>
+                <img src="d9f4b98e032a492db2263a2b267b1eb26aec30534b30796a0978e78e0e06d25d.png" title=" Clic registrar operacion (completed)" width="0"/>
+                <img src="d9f4b98e032a492db2263a2b267b1eb26aec30534b30796a0978e78e0e06d25d.png" title=" When Selecciona operario y herramienta a prestar (completed)" width="0"/>
+                <img src="fac1a921c829cff1663eeca6a2eaf5bac9ea354d41d157484a3ff1cbe90c3983.png" title=" Then La aplicacion muestra la informacion de la operacion realizada" width="0"/>
+                <img src="fac1a921c829cff1663eeca6a2eaf5bac9ea354d41d157484a3ff1cbe90c3983.png" title=" Valida registro de operacion" width="0"/>
+                <img src="1e0d77fc03c3dbbf04a870eaa5795749ed18bf0946f0a20b558d275f2cd1d547.png" title=" Valida registro de operacion (completed)" width="0"/>
+                <img src="1e0d77fc03c3dbbf04a870eaa5795749ed18bf0946f0a20b558d275f2cd1d547.png" title=" Then La aplicacion muestra la informacion de la operacion realizada (completed): <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.9.0</span>
+</div>
+</body>
+</html>

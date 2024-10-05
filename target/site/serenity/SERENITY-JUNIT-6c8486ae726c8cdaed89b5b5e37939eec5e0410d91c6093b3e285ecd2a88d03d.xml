@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="CP05 - Realizar ingreso de cuenta de usuario" skipped="0" tests="1" time="6.52" timestamp="2024-10-03 10:44:03"><testcase name="1 - Validar credenciales correctas"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="CP05 - Realizar ingreso de cuenta de usuario" skipped="0" tests="1" time="3.54" timestamp="2024-10-05 07:58:25"><testcase name="1 - Validar credenciales correctas"/></testsuite>
